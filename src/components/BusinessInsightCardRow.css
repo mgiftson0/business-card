@@ -1,0 +1,20 @@
+.business-insight-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px; /* Negative margin for consistent spacing */
+  }
+  
+  .business-insight-col {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+  
+  @media (min-width: 768px) {
+    .business-insight-col {
+      flex: 1 1 calc(33.33% - 24px); /* 3-column layout for larger screens */
+      max-width: calc(33.33% - 24px);
+    }
+  }
+  
