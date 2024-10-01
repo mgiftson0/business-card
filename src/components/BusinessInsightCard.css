@@ -1,65 +1,84 @@
-/* src/components/BusinessInsightCard.css */
-
 .business-insight-card {
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: box-shadow 0.3s ease;
-    width: 100%; /* Responsive width */
-    height: 100%; /* Responsive height */
-    margin: 8px;
-    flex-shrink: 0;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .business-insight-card:hover {
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  }
-  
-  .card-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 12px;
-  }
-  
-  .card-icon {
-    font-size: 2rem;
-    margin-right: 12px;
-  }
-  
-  .card-title-container {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .card-title {
-    margin: 0;
-    font-size: 1.25rem;
-    font-weight: bold;
-  }
-  
-  .card-change {
-    font-size: 1rem;
-  }
-  
-  .card-change.positive {
-    color: #4caf50;
-  }
-  
-  .card-change.negative {
-    color: #f44336;
-  }
-  
-  .card-value {
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 12px 0;
-  }
-  
-  .card-description {
-    font-size: 1rem;
-  }
-  
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 350px;
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+}
+
+.business-insight-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.card-icon {
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  padding: 16px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  color: #333;
+  margin-right: 16px;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.card-change {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #777;
+  font-weight: 500;
+  margin-top: 6px;
+}
+
+.card-value {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #333;
+  margin: 24px 0 16px;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.positive {
+  color: #4caf50;
+}
+
+.negative {
+  color: #f44336;
+}
