@@ -1,0 +1,65 @@
+/* src/components/BusinessInsightCard.css */
+
+.business-insight-card {
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+    width: 100%; /* Responsive width */
+    height: 100%; /* Responsive height */
+    margin: 8px;
+    flex-shrink: 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .business-insight-card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  
+  .card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .card-icon {
+    font-size: 2rem;
+    margin-right: 12px;
+  }
+  
+  .card-title-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-title {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .card-change {
+    font-size: 1rem;
+  }
+  
+  .card-change.positive {
+    color: #4caf50;
+  }
+  
+  .card-change.negative {
+    color: #f44336;
+  }
+  
+  .card-value {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 12px 0;
+  }
+  
+  .card-description {
+    font-size: 1rem;
+  }
+  
